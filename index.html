@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="section_one">
+            <div class="main_card">
+                <div class="main_card_usser">
+                    <img src="img/IMG_20220212_113511084.jpg" alt="..." class="usser_img">
+                    <div class="usser_data">
+                        <p class="usser_report">Report for</p>
+                        <p class="usser_name">Ronald Regalado</p>
+                    </div>
+                </div>
+                <div class="main_card_options">
+                    <p class="options_frecuency btnMarck" id="0">Daily</p>
+                    <p class="options_frecuency" id="1">Weekly</p>
+                    <p class="options_frecuency" id="2">Monthly</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="section_two">
+                 <!--El contenido de esta secci'on es generado din'amicamente usando javascript-->
+        </section>
+    </main>
+
+    <div class="footer">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.ronald-regalado.github.io" target="_blank">Ronald Regalado Batistas.</a>
+      </div>
+
+    <template>
+        <div class="card">
+            <div class="card_background" style="background-color: red;" >
+                <img src="img/icon-work.svg" alt=".." class="icon">
+            </div>
+            <div class="card_datails">
+                <div class="activities">
+                    <div class="activity">Work</div>
+                    <img src="img/icon-ellipsis.svg" alt="...">
+                </div>
+                <div class="time">
+                    <p class="actuall_time"><span id="actuall_time">32</span>hrs</p>
+                    <p class="previous_time">Last <span class="last_frecuency"> Day</span> - <span id="previous_time">7</span>hrs</p>
+                </div>
+            </div>
+        </div>
+    </template>
+    
+   <script src="javascript.js" ></script>
+</body>
+</html>

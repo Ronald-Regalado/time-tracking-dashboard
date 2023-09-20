@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Blue:hsl(246, 80%, 60%);
+    --orange:hsl(15, 100%, 70%);
+    --Soft_blue:hsl(195, 74%, 62%);
+    --Light_red:hsl(348, 100%, 68%);
+    --Lime_green:hsl(145, 58%, 55%);
+    --Violet:hsl(264, 64%, 52%);
+    --Soft_orange:hsl(43, 84%, 65%);
+    --Very_dark_blue:hsl(226, 43%, 10%);
+    --Dark_blue: hsl(235, 46%, 20%);
+    --Desaturated_blue: hsl(235, 45%, 61%);
+    --Pale_Blue: hsl(236, 100%, 87%);
+    --white:white;
+}
+
+body{
+    background-color: var(--Very_dark_blue);
+    color: var(--Pale_Blue);
+    font-family: sans-serif;
+}
+main{
+    margin: 120px auto;
+    width: 328px;   
+}
+.main_card{
+    background-color: var(--Dark_blue);
+    margin: 10px auto;
+    border-radius: 16px;
+}
+.main_card_usser{
+    background-color: var(--Blue);
+    border-radius: 16px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    height:140px ;
+}
+.usser_img{
+    width: 80px;
+    height:80px;
+    border: 3px solid var(--white);
+    border-radius: 50%;
+    margin-right: 15px;    
+}
+.usser_report{
+      font-size: 0.9em;
+      margin-bottom: 5px;
+}
+.usser_name{
+    font-size: 1.3em;
+    color: var(--white);
+}
+.main_card_options{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+.options_frecuency:hover{
+    cursor: pointer;
+   color: var(--white);
+}
+
+.card{
+    border-radius: 16px;
+    position: relative;
+    margin:  20px auto ;
+    margin-bottom: 110px;
+}
+
+.card_background{
+ background-color: var(--orange);
+ border-top-left-radius: 16px;
+ border-top-right-radius: 16px;
+ overflow: hidden;
+ height: 75px;
+}
+.icon{
+    float: right;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+.card_datails{
+    border-radius: 16px;
+    background-color: var(--Dark_blue);
+    padding: 25px;
+    position: absolute;
+    width: 100%;
+    margin-top: -35px;
+}
+.card_datails:hover{
+    cursor: pointer;
+    background-color: var(--Desaturated_blue);
+}
+.activities{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.actuall_time{
+    font-size: 2.4em;
+    color: var(--white);
+    font-weight: 100;
+}
+.previous_time{
+    font-size: 0.9em;
+}
+.footer{
+    text-align: center;
+    padding: 60px;
+    font-size: 1.1em;
+}
+
+.btnMarck{
+    color: var(--white);
+}
+
+@media(min-width: 1200px){
+    main{
+        width: 1150px;
+        display:flex;
+    }
+    .section_one{
+        width: 290px;
+        height: 564px;
+        margin-right: 20px;
+    }
+    .main_card{
+        margin-top: 16px;
+    }
+    .main_card_usser{
+        height: 320px;
+        display: block;
+    }
+    .usser_img{
+        margin: 20px 0 45px 5px;
+        width: 85px;
+        height: 85px;
+    }
+    .usser_report{
+        font: 1em;
+    }
+    .usser_name{
+        font-size: 2.4em;
+        font-weight:100;
+    }
+    .main_card_options{
+        display:block;
+        padding: 40px;     
+    }
+    .options_frecuency{
+        margin-bottom: 30px;
+    }
+
+    
+    .section_two{
+        height: 564px;
+        width: 860px;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .card{
+        width: 260px;
+        height: 244px;
+        margin-bottom: 10px;
+    }
+    .card_datails{
+        height: 220px;
+
+    }
+    .time{
+        display: block;
+        margin-top: 40px;
+    }
+    .actuall_time{
+        font-size: 3.6em;
+    }
+    .previous_time{
+        margin-top: 30px;
+        font-weight: 200;
+    }
+}
