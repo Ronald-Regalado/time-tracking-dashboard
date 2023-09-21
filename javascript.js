@@ -20,12 +20,12 @@ const fetchData=async()=>{
   //Función para dibujar las targetas
    const Draw=(data,array)=>{
         const icon=[
-        '/img/icon-work.svg',
-        '/img/icon-play.svg',
-        '/img/icon-study.svg',
-        '/img/icon-exercise.svg',
-        '/img/icon-social.svg',
-        '/img/icon-self-care.svg'
+        './img/icon-work.svg',
+        './img/icon-play.svg',
+        './img/icon-study.svg',
+        './img/icon-exercise.svg',
+        './img/icon-social.svg',
+        './img/icon-self-care.svg'
         ]
 
         const bgColor=[
